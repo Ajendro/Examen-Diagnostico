@@ -3,10 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Formativo</title>
-    
+    <title>Examen Diagnostico</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
-    
+    <header>
+<nav class="bg-black border-black-200 dark:bg-black-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="logo-uide.png" class="h-8" alt="" />
+      </a>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-black-900 rounded-lg bg-black-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-black dark:bg-black-800 md:dark:bg-black-900 dark:border-black-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Inicio
+                
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"> Artículos</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Comentarios</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calificación</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <hr>
+  <section class="section"> 
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Bienvenidos a mi Blog</h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Aqui podras Encontrar los mejores arcticulos artículos relacionados con la tecnología</p>
+    <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        Comenzemos
+        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg>
+    </a>
+  </section>
+
+  <hr style="margin-top: 4%;">
+
+  <div class="section">
+    <h1 class="text-5xl font-extrabold dark:text-white">Artículos</h1>
+  </div>
+
+  <div class="flex flex-wrap justify-center space-x-4">
+    <section class="section1 max-w-xl">
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Consejos para aumentar el nivel de seguridad en la red</h5>
+                <div class="flex justify-center w-full">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="imagen1.webp" alt="">
+                </div>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">En la era digital actual, mantener la privacidad y seguridad en línea se ha vuelto más importante que nunca. La constante recopilación de datos...
+                    <strong>Juan José Zorita Endara</strong></p>
+                <div class="section">
+                    <button onclick="toggleAccordion('accordionContent1')" class="mt-2 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Leer más
+                    </button>
+                    <div id="accordionContent1" class="hidden mt-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p>En la era digital actual, mantener la privacidad y seguridad en línea se ha vuelto más importante que nunca. La constante recopilación de datos personales, el aumento de las amenazas cibernéticas y la vulnerabilidad de los dispositivos conectados hacen que sea indispensable tomar medidas para proteger la información y que los usuarios puedan tener una presencia online segura. 
+                
+                            En Telefónica Open Gateway buscamos contribuir al desarrollo de la red y aportar soluciones para este tipo de problemáticas. Se trata de una iniciativa que transforma las redes de telecomunicaciones en plataformas y permite crear servicios digitales optimizados y adaptados a las necesidades del presente. ¿Quieres conocer algunas de las formas en que genera mayor seguridad para el usuario? ¡Sigue leyendo!</p>
+                        <p><strong>Cuáles son los principales retos y cómo afrontarlos </strong><br>
+                            Uno de los desafíos a los que se enfrenta la seguridad en la red es el phishing, un método por el que los ciberdelincuentes intentan engañar a las personas para que revelen información confidencial, como contraseñas y números de tarjetas de crédito. A menudo se hacen pasar por una entidad de confianza, como un banco, una tienda online o una plataforma de redes sociales. ¿Cómo evitar el phishing? Los usuarios deben desconfiar de los correos electrónicos, mensajes o sitios web que soliciten este tipo de datos sensibles y verificar siempre la legitimidad de los remitentes.   
+                            
+                            Utilizar contraseñas débiles o repetidas facilita el acceso no autorizado a las cuentas en línea. Los ciberdelincuentes pueden usar técnicas de fuerza bruta o aprovecharse de filtraciones en brechas de seguridad anteriores para acceder a las cuentas. Para evitar este problema, es fundamental utilizar contraseñas diferentes para cada cuenta y que cuenten con una combinación de letras mayúsculas y minúsculas, números y caracteres especiales. Además, existen procesos que requieren autenticación de doble factor o contraseñas de un solo uso para iniciar sesión que refuerzan la seguridad de los usuarios, por lo que hay que intentar aplicarlos siempre.  </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="section1 max-w-xl">
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Medidas para evitar fraudes bancarios por Internet </h5>
+                <div class="flex justify-center w-full">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="imagen2.webp" alt="">
+                </div>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">La seguridad en Internet es fundamental para salvaguardar la información personal y la seguridad financiera de los usuarios. Evitar la pérdida de capitales, y...
+                    <strong>Mario García-Mora Casarrubio</strong></p>
+                <div class="section">
+                    <button onclick="toggleAccordion('accordionContent2')" class="mt-2 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Leer más
+                    </button>
+                    <div id="accordionContent2" class="hidden mt-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p>La seguridad en Internet es fundamental para salvaguardar la información personal y la seguridad financiera de los usuarios. Evitar la pérdida de capitales, y generar confianza a los usuarios que utilizan las aplicaciones o navegan por la web, es una tarea muy importante para las empresas que involucran actividades económicas en internet.  
+
+                            En Telefónica Open Gateway trabajamos por conectar a las personas y creemos que es de vital importancia que estas conexiones sean seguras. Por ello, apostamos por iniciativas como Open Gateway, que transforman las redes de telecomunicaciones en plataformas y permiten crear servicios digitales optimizados y adaptados a las necesidades del presente. ¿Quieres conocer las distintas medidas antifraude que ofrece para el sector financiero?  </p>
+                        <p><strong>¿Qué medidas se pueden adoptar para prevenir posibles fraudes bancarios en Internet? </strong>
+                            <br>
+                            Por un lado, es importante destacar la responsabilidad individual de los usuarios, que deben navegar con conocimiento, precaución y ser conscientes del uso que hacen de Internet. Desde el punto de vista del usuario, se debe evitar compartir las claves de acceso con terceros. Desconfiar de correos, mensajes o llamadas que soliciten datos confidenciales, son algunas de las medidas básicas que se deben adoptar. También es importante verificar la procedencia de los mails y evitar hacer clic en enlaces para no caer en estafas por fishing.  
+                            
+                            Por otro lado, las compañías deben aplicar medidas de seguridad innovadoras y eficaces que ayuden a los usuarios a evitar los ataques de los ciberdelincuentes, lo que se puede lograr mediante la integración de nuevas capas de seguridad en sus aplicaciones, ya sean bancarias o con métodos de pago. Por esta razón es importante que los usuarios mantengan el software actualizado a la última versión. 
+                            
+                            La actualización regular de las aplicaciones permite la integración de las medidas de seguridad que las compañías y los developers desarrollan para combatir las nuevas formas de ciberfraude. Algunos ejemplos reales de medidas antifraude son las desarrolladas a través de las APIs de Telefónica Open Gateway, de las que vamos a hablar más adelante y que han sido posibles gracias al trabajo de convertir las redes telco en plataformas programables. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="section1 max-w-xl">
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Las 8 tendencias tecnológicas que marcarán el 2024 </h5>
+                <div class="flex justify-center w-full">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="imagen3.webp" alt="">
+                </div>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Desciframos las tendencias tecnológicas emergentes para 2024: IA generativa, la llegada de las Vision Pro, nuevos fabricantes de coches... ¿Asentamiento o nuevos avances?
+                    <strong>Víctor Millán</strong></p>
+                <div class="section">
+                    <button onclick="toggleAccordion('accordionContent3')" class="mt-2 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Leer más
+                    </button>
+                    <div id="accordionContent3" class="hidden mt-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p>2023 fue una avalancha en el ámbito tecnológico. Desde el despliegue de la inteligencia artificial generativa, pasando por los primeros usos potentes de realidad aumentada o la llegada de las Vision Pro. Pero eso forma parte del pasado. La pregunta es: ¿cuáles serán las tendencias tecnológicas en 2024? ¿Será un año para asentar las grandes tendencias iniciadas en 2023 o volveremos a ver cosas que no esperábamos?
+
+                            Cabe recordar en momentos como estos que servicios y tecnologías que han dado tanto que hablar como ChatGPT apenas llevan 18 meses con nosotros. Y a lo largo de un año pueden pasar muchas cosas. Aquí recopilamos las que pueden ser las grandes tendencias tecnológicas de 2024, apoyados en las previsiones que han lanzado consultoras y grupos de expertos como Deloitte, G2 o grupos de inversión como A16.</p>
+                        <p><strong>La inteligencia artificial seguirá siendo una de las grandes tecnológicas de 2024</strong>
+                            <br>
+                            Como decíamos, 2023 fue una montaña rusa en materia de IA. Tanto, que cerramos el curso con el despido y regreso de Sam Altman como CEO de OpenAI, la gran compañía que está impulsando esta revolución.
+
+                            Tras el lanzamiento de la GPTStore, Gemini 1.5 de Google, Claude 3 y Sora, entre otros, cabe esperar que la rueda no se detendrá y la inteligencia artificial será, sin duda, una de las grandes tendencias tecnológicas de 2024. La pregunta es: ¿veremos cómo esta tecnología se expande y revoluciona diversos ámbitos de nuestras vidas?
+
+                            Poco a poco, estas IAs se están abriendo paso en empresas y productos que usamos de manera regular. Por lo que no sería una sorpresa que, a lo largo de 2024, la comencemos a ver más presente en el día a día. También es inevitable que estas IAs lleguen a nuevos formatos, como el vídeo, donde aún sigue estando unos pasos por detrás, lo que traerá problemas de fake news y privacidad. Prueba de ello es Sora, la IA que OpenAI ha anunciado, pero no lanzado públicamente. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="section1 max-w-xl">
+        <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Los principales hitos de Telefónica Innovación Digital en el MWC Barcelona 2024 </h5>
+                <div class="flex justify-center w-full">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="imagen4.webp" alt="">
+                </div>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Por 15º año consecutivo hemos participado en el Mobile World Congress, el mayor evento tecnológico dedicado a la comunicación móvil, que se celebra cada...
+                    <strong>Mario García-Mora Casarrubio</strong></p>
+                <div class="section">
+                    <button onclick="toggleAccordion('accordionContent4')" class="mt-2 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Leer más
+                    </button>
+                    <div id="accordionContent4" class="hidden mt-3 font-normal text-gray-700 dark:text-gray-400">
+                        <p>Por 15º año consecutivo hemos participado en el Mobile World Congress, el mayor evento tecnológico dedicado a la comunicación móvil, que se celebra cada año en Barcelona.
+
+                            Esta edición de 2024 ha sido especial para todo el equipo de Telefónica, ya que celebrábamos además el centenario de Telefónica, bajo el lema “100 Years Leading Change”. Ha sido una oportunidad perfecta para presentar nuestro recorrido a lo largo de cien años de trabajo e innovación, en el mundo de las telecomunicaciones. Destacando siempre cómo la experiencia de la compañía sirve de motor para impulsar los cambios y transformaciones del futuro.
+                            
+                            </p>
+                        <p><strong>Avances tecnológicos de Telefónica Innovación Digital en el MWC 2024</strong>
+                            <br>
+                            Este Mobile World Congress 2024, Open Gateway ha sido uno de los proyectos principales de Telefónica. Tras un año de vida de la iniciativa, el MWC 2024 ha estado lleno de noticias relevantes para la industria como el lanzamiento comercial en Alemania y las colaboraciones con TikTok, Frete.com, Itaú, Utiq, Deloitte y Salesforce, entre otros.
+                            Tanto Chema Alonso, Chief Digital Officer y CEO de Telefónica Innovación Digital, como David del Val, Director de Telefónica Open Gateway, destacaron que, en el primer año, 47 operadores móviles ya forman parte de la iniciativa de Open Gateway. Esto es equivalente a más del 65% de las conexiones alrededor de todo el mundo. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+</div>
+
+<hr class="section">
+<div class="section">
+    <h1 class="text-5xl font-extrabold dark:text-white">Comentarios</h1>
+  </div>
+  <form class="max-w-sm mx-auto section">
+    <div class="mb-5">
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo</label>
+      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="" required />
+    </div>
+    <div class="mb-5">
+      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comentario</label>
+      <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+    </div>
+    <div class="flex items-start mb-5">
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar Comentario</button>
+  </form>
+  
+
+
+<hr class="section">
+<div class="section">
+<h1 class="text-5xl font-extrabold dark:text-white">Contacto</h1>
+</div>
+
+
+
+
+<form class="max-w-md mx-auto">
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+    </div>
+    <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="relative z-0 w-full mb-5 group">
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+          <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+      </div>
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  </form>
+
+<hr class="section">
+
+<footer class="bg-black rounded-lg shadow dark:bg-black-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="logo-uide.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+
 </body>
+
 </html>
